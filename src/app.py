@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, send_file
 from psycopg2 import connect, extras
 from cryptography.fernet import Fernet
+#from dotenv import load_dotenv
 
 app = Flask(__name__)
 key = Fernet.generate_key()
